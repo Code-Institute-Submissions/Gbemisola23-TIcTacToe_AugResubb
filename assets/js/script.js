@@ -13,6 +13,24 @@ let winningCombinations =[
     [2,4,6],
 ]
 
+function checkForWinner(){
+    winningCombinations.forEach(function(combination){
+        let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer)
+    if(check){
+        highlightCells(combination)
+    }
+    
+  })
+}
+
+
+
+function highlightCells(combination){
+combination.forEach(function(idx){
+  cells[idx].classList.add("highlight")
+})
+}
+
 cells.forEach(function(cell){
     cell.addEventListener('click', function(){
         if(cell.innerText.trim() != "")return
