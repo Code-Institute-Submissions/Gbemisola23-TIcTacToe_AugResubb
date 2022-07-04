@@ -5,6 +5,7 @@ body{
     background-color: #385F71 ;
     justify-content: center;
     font-family: Lobster;
+    text-align: center;
     
 }
 /* --------- Heading */
@@ -21,6 +22,20 @@ hr{
 h1 {
     color:#FFFFFF ;
 }
+
+/*---- Restart Button */
+button {
+    font-size: 18px;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: #f7b32c;
+}
+
+
+
 
 /*--------game layout */
 .board{

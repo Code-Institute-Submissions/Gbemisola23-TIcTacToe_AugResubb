@@ -38,3 +38,10 @@ cells.forEach(function(cell){
        currentPlayer = currentPlayer == "x" ? "o" : "x"
     })
 })
+
+Restartbtn.addEventListener('click', Restart)
+
+function Restart() {
+    cells.fill(null)
+
+}
