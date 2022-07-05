@@ -1,6 +1,7 @@
 let cells = document.querySelectorAll('.cell')
 cells = Array.from(cells)
 let currentPlayer = "x"
+let restarBtn = document.getElementById('restarBtn')
 
 let winningCombinations =[
     [0,1,2],
@@ -36,12 +37,13 @@ cells.forEach(function(cell){
         if(cell.innerText.trim() != "")return
        cell.innerText = currentPlayer
        currentPlayer = currentPlayer == "x" ? "o" : "x"
+       checkForWinner()
     })
 })
 
-Restartbtn.addEventListener('click', Restart)
+restarBtn.addEventListener('click', Restart)
 
 function Restart() {
-    cells.fill(null)
+   location.reload()
 
 }
