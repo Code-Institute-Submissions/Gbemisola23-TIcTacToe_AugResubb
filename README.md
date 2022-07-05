@@ -2,7 +2,7 @@
 
 A game in which two players seek to play in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares; noughts and crosses.
 
-The live website can be found here [TcTacToe Portfolio](https://gbemisola23.github.io/TIcTacToe/).
+The live website can be found here [TicTacToe Portfolio](https://gbemisola23.github.io/TIcTacToe/).
 
 
 
