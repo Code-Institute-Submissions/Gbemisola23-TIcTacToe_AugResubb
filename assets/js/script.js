@@ -1,7 +1,10 @@
 let cells = document.querySelectorAll('.cell')
 cells = Array.from(cells)
 let currentPlayer = "x"
-let restarBtn = document.getElementById('restarBtn')
+const restarBtn = document.getElementById('restarBtn')
+const winningMessageElement = document.getElementById('winningMessage')
+const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
+
 
 let winningCombinations =[
     [0,1,2],
@@ -47,3 +50,12 @@ function Restart() {
    location.reload()
 
 }
+
+ function winningMessage(){
+    MessageEvent
+ }
+  
+  
+  
+  
+  
