@@ -2,11 +2,9 @@ let cells = document.querySelectorAll('.cell')
 cells = Array.from(cells)
 let currentPlayer = "x"
 const restarBtn = document.getElementById('restarBtn')
-const winningMessageElement = document.getElementById('winningMessage')
-const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
+const playerText = document.getElementById("playerText");
 
-
-let winningCombinations =[
+const winningCombinations =[
     [0,1,2],
     [3,4,5],
     [6,7,8],
@@ -21,7 +19,8 @@ function checkForWinner(){
     winningCombinations.forEach(function(combination){
         let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer)
     if(check){
-        highlightCells(combination)
+        highlightCells(combination);
+        playerText.innerHTML =`${currentPlayer} has won!`;
     }
     
   })
@@ -39,10 +38,28 @@ cells.forEach(function(cell){
     cell.addEventListener('click', function(){
         if(cell.innerText.trim() != "")return
        cell.innerText = currentPlayer
+
+       if(playerHasWon()!== false){
+        // playerText =`${currentPlayer}has won!`
+        let winning_blocks = playerHasWon() 
+        console.log(winning_blocks);
+     }
+      
        currentPlayer = currentPlayer == "x" ? "o" : "x"
        checkForWinner()
     })
 })
+
+function playerHasWon(){
+     for (const condition of winningCombinations) {
+        let[a,b,c] = condition
+        if (cells[a] && cells[a] == cells[b] && cells[a]== cells[c]){
+            return[a,b,c]
+        }
+
+     }
+     return false
+}
 
 restarBtn.addEventListener('click', Restart)
 
@@ -51,11 +68,7 @@ function Restart() {
 
 }
 
- function winningMessage(){
-    MessageEvent
- }
-  
-  
+ 
   
   
   
