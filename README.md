@@ -5,40 +5,16 @@
 A game in which two players seek to play in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares; noughts and crosses.
 
 The live website can be found here [TicTacToe Portfolio](https://gbemisola23.github.io/TIcTacToe/).
-
+![Responsive](assets/images/all-devices-black.png)
 
 
 ## Features
 
-* **Navigation**
-  - Fixed navigation bar includes links to the  Restart button and gameboard.
+* **Header**
+  - The header includes the title name and logo.
 
-![intro](/images/laptopscreenshot.png)
+![intro](assets/images/tic-heading.png)
 
-* **Our Services Section**
-  - A brief description of the services the company renders.
-  - The mid-page contains the background image.
-  - The footer contains the company's contact detail and copyright.
-  
-
-* **About Section**
-  - In this section, the user will know more about Cloutsmith.
-  - The footer contains Cloutsmith's Contact details and copyright.
-![about](images/about-us-screenshot.png)
-
-
-* **Contact Section**
-  - A simple form that collects  Name, Email and Message for users that wants to get in touch with me.
-  - The footer contains Cloutsmith's Contact details  and copyright.
-    
-![contact](images/Contact-screenshot.png)
-
-
-* **The Footer**
-  - The footer section includes Cloutsmith Contact info and copyright.
-
- 
-![footer](images/Footer-screenshot.png)
 
 
 
@@ -58,9 +34,12 @@ The live website can be found here [TicTacToe Portfolio](https://gbemisola23.git
 ![checker](images/checker-screenshot.png)
   * **CSS**
     - No errors were returned when passing through the Jigsaw.
-    ![css](images/jigsaw.png)
-  
+    ![css](assets/images/tictactoecssscreenshot.png)
+  * **JAVASCRIPT**
+  -
+  ![Js]
 
+  
   * **Unfixed**    
     - No unfixed bugs.
  
@@ -77,16 +56,14 @@ The site was deployed to Github. The steps to deploy are as follows:
 - Deployment should be confirmed by a message on a green background - The message should have a green tick mark followed by "Your site is published at" followed by the web address.
 - Confirm deployment by navigating to the displayed web address.
 
- The live website can be found here; [Cloutsmith Portfolio](https://gbemisola23.github.io/Cloutsmith/index.html).
+ The live website can be found here; [TICTACTOE Portfolio](https://gbemisola23.github.io/TIcTacToe/).
   
  
 ## Credits
 
 
 * Homepage banner from [https://www.pexels.com].
-* About and contact banner from [www.freepik.com<]
-* Icons from [Font Awesome](https://fontawesome.com/)
+* Icons from [Flaticon](fhttps://www.flaticon.com/)
 * Fonts from [https://fonts.google.com/]
-* Some of the code for the Home and About were from the "Love Running" project.
-* The code for the contact form were from True Coder on Youtube.
-* Text gotten from Cloutsmith.com.
+* Code was gotten from LoveMaths Project, Code Institute.
+* Some code were  gotten from Web Dev Simplified, Siphiwo Julayi, Angle Brace on YouTube.
