@@ -1,8 +1,12 @@
+ /* jshint esversion: 6 */
+/* globals $:false */
+
+let playerText = document.getElementById('playerText')
 let cells = document.querySelectorAll('.cell')
+let winnerIndicator = getComputedStyle(document.body).getPropertyValue( '--winning-blocks')
 cells = Array.from(cells)
 let currentPlayer = "x"
 const restarBtn = document.getElementById('restarBtn')
-const playerText = document.getElementById("playerText");
 
 const winningCombinations =[
     [0,1,2],
@@ -22,7 +26,7 @@ function checkForWinner(){
         highlightCells(combination);
         playerText.innerHTML =`${currentPlayer} has won!`;
     }
-    
+  
   })
 }
 
@@ -30,19 +34,18 @@ function checkForWinner(){
 
 function highlightCells(combination){
 combination.forEach(function(idx){
-  cells[idx].classList.add("highlight")
+  cells[idx].classList.add("highlight");
 })
 }
 
 cells.forEach(function(cell){
     cell.addEventListener('click', function(){
-        if(cell.innerText.trim() != "")return
+        if(cell.innerText.trim() != "")return;
        cell.innerText = currentPlayer
 
        if(playerHasWon()!== false){
-        // playerText =`${currentPlayer}has won!`
+        playerText.innerHTML =`${currentPlayer}has won!`
         let winning_blocks = playerHasWon() 
-        console.log(winning_blocks);
      }
       
        currentPlayer = currentPlayer == "x" ? "o" : "x"

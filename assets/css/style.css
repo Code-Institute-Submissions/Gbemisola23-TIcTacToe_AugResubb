@@ -46,8 +46,7 @@ button:hover{
     margin-left: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
+
 }
 
 .cell{
@@ -72,8 +71,8 @@ button:hover{
 /*--------Winning Message */
 :root {
     --winning-blocks: white;
-
 }
+
 
 .winning-message {
     display: none;

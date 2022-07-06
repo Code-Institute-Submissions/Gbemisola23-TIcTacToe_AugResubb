@@ -13,7 +13,7 @@ The live website can be found here [TicTacToe Portfolio](https://gbemisola23.git
 * **Header**
   - The header includes the title name and logo.
 
-![intro](assets/images/tic-heading.png)
+![intro](assets/images/tictacgame.png)
 
 
 
@@ -22,9 +22,9 @@ The live website can be found here [TicTacToe Portfolio](https://gbemisola23.git
 
 * I've tested that this page works well in desktop verion.
 * The iste doesn't work fully well in desktop version.
-* I've confirmed that this project is not completely responsive on all screen sizes using dev tools.
+* I've confirmed that this project is completely responsive on all screen sizes using dev tools.
 * I confirmed by testing with users that the text of all sections is readable and easy to understand.
-![responsiveness](images/performance.png)
+![responsiveness](assets/images/tictacaccessibility.png)
 
 
 ### Validator Testing
