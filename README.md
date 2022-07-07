@@ -31,7 +31,7 @@ The live website can be found here [TicTacToe Portfolio](https://gbemisola23.git
 
   * **HTML** 
     - No errors were found when passing through official W3C Validator.
-![checker](images/checker-screenshot.png)
+![checker](assets/images/tictac-html-validator.png)
   * **CSS**
     - No errors were returned when passing through the Jigsaw.
     ![css](assets/images/tictactoecssscreenshot.png)
@@ -61,8 +61,6 @@ The site was deployed to Github. The steps to deploy are as follows:
  
 ## Credits
 
-
-* Homepage banner from [https://www.pexels.com].
 * Icons from [Flaticon](fhttps://www.flaticon.com/)
 * Fonts from [https://fonts.google.com/]
 * Code was gotten from LoveMaths Project, Code Institute.
