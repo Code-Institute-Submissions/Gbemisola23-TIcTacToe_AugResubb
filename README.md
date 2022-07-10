@@ -7,21 +7,18 @@ A game in which two players seek to play in alternate turns to complete a row, a
 The live website can be found here [TicTacToe Portfolio](https://gbemisola23.github.io/TIcTacToe/).
 ![Responsive](assets/images/all-devices-black.png)
 
-
 ## Features
 
 * **Header**
   - The header includes the title name and logo.
+  - The body  includes the board game
 
 ![intro](assets/images/tictacgame.png)
 
 
-
-
 ## Testing
 
-* I've tested that this page works well in desktop verion.
-* The iste doesn't work fully well in desktop version.
+* I've tested that this page works well in desktop  and mobile verion.
 * I've confirmed that this project is completely responsive on all screen sizes using dev tools.
 * I confirmed by testing with users that the text of all sections is readable and easy to understand.
 ![responsiveness](assets/images/tictacaccessibility.png)
@@ -37,12 +34,11 @@ The live website can be found here [TicTacToe Portfolio](https://gbemisola23.git
     ![css](assets/images/tictactoecssscreenshot.png)
   * **JAVASCRIPT**
   -
-  ![Js]
-
-  
+  ![Javascript]
+ -No errors were returned when passing through the Jshint.
+ ![Javascript](assets/images/jshint-screenshot.pnggi)
   * **Unfixed**    
     - No unfixed bugs.
- 
      
 ## Deployment
 
@@ -63,5 +59,5 @@ The site was deployed to Github. The steps to deploy are as follows:
 
 * Icons from [Flaticon](fhttps://www.flaticon.com/)
 * Fonts from [https://fonts.google.com/]
-* Code was gotten from LoveMaths Project, Code Institute.
-* Some code were  gotten from Web Dev Simplified, Siphiwo Julayi, Angle Brace on YouTube.
+* Some Code were adopted from LoveMaths Project, Code Institute.
+* Html and Javascript code were  adopted from Web Dev Simplified, Siphiwo Julayi, Angle Brace on YouTube.
