@@ -9,7 +9,7 @@ let currentPlayer = "x";
 const restarBtn = document.getElementById('restarBtn');
 let hasGameFinished = false;
 
-/* Wiining combinations for game boards*/
+/* This sets the rows or columns for winning*/
 const winningCombinations =[
     [0,1,2],
     [3,4,5],
@@ -20,7 +20,9 @@ const winningCombinations =[
     [0,4,8],
     [2,4,6],
 ];
-
+/* This listens for clicks on the board 
+*and sets the first player to either 'x' or '0'
+*/
 cells.forEach(function(cell){
   "use strict";
     cell.addEventListener('click', function(){
@@ -35,6 +37,9 @@ cells.forEach(function(cell){
     });
 });
 
+/* checks for which player has won 
+*and ensures the game ends when a player has won
+*/
 function checkForWinner(){
   "use strict";
     winningCombinations.forEach(function(combination){
@@ -65,6 +70,7 @@ function playerHasWon(){
      return false;
 }
 
+/* Gets the restart button*/
 restarBtn.addEventListener('click', Restart);
 
 function Restart() {
