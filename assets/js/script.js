@@ -1,12 +1,15 @@
  /* jshint esversion: 6 */
 /* globals $:false */
 
+/* Gamepage variables. */
 let playerText = document.getElementById('playerText');
 let cells = document.querySelectorAll('.cell');
 cells = Array.from(cells);
 let currentPlayer = "x";
 const restarBtn = document.getElementById('restarBtn');
+let hasGameFinished = false;
 
+/* Wiining combinations for game boards*/
 const winningCombinations =[
     [0,1,2],
     [3,4,5],
@@ -18,28 +21,10 @@ const winningCombinations =[
     [2,4,6],
 ];
 
-function checkForWinner(){
-  "use strict";
-    winningCombinations.forEach(function(combination){
-        let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer);
-    if(check){
-        highlightCells(combination);
-        playerText.innerHTML =`${currentPlayer} has won!`;
-    }
-  });
-}
-
-function highlightCells(combination){
-  "use strict";
-combination.forEach(function(idx){
-  cells[idx].classList.add("highlight");
-});
-}
-
 cells.forEach(function(cell){
   "use strict";
     cell.addEventListener('click', function(){
-        if(cell.innerText.trim() != "")return;
+       if(cell.innerText.trim() != "" || hasGameFinished) return;
        cell.innerText = currentPlayer;
        checkForWinner();
     
@@ -49,6 +34,25 @@ cells.forEach(function(cell){
        currentPlayer = currentPlayer == "x" ? "o" : "x";
     });
 });
+
+function checkForWinner(){
+  "use strict";
+    winningCombinations.forEach(function(combination){
+        let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer);
+        if(check){
+            highlightCells(combination);
+            playerText.innerHTML =`${currentPlayer} has won!`;
+            hasGameFinished = true;
+        }
+  });
+}
+
+function highlightCells(combination){
+  "use strict";
+  combination.forEach(function(idx){
+    cells[idx].classList.add("highlight");
+  });
+}
 
 function playerHasWon(){
   "use strict";
