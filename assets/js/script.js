@@ -9,7 +9,7 @@ let currentPlayer = "x";
 const restarBtn = document.getElementById('restarBtn');
 let hasGameFinished = false;
 
-/* This sets the rows or columns for winning*/
+/* This gets the rows or columns combination for winning*/
 const winningCombinations =[
     [0,1,2],
     [3,4,5],
