@@ -34,9 +34,10 @@ The live website can be found here [TicTacToe Portfolio](https://gbemisola23.git
     ![css](assets/images/tictactoecssscreenshot.png)
   * **JAVASCRIPT**
   -
-  ![Javascript]
+  * **Javascript**
  -No errors were returned when passing through the Jshint.
- ![Javascript](assets/images/jshint-screenshot.pnggi)
+ ![Javascript](assets/images/jshint-screenshot.png)
+
   * **Unfixed**    
     - No unfixed bugs.
      
